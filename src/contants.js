@@ -1,6 +1,6 @@
 const linksNav = [
     {
-        name: "Sobre nosotros",
+        name: "Nosotros",
         url: "/about",
     },
     {

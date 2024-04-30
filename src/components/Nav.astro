@@ -4,13 +4,13 @@ import { Image } from "astro:assets";
 import linksNav from "../contants";
 ---
 
-<ul class="flex items-center gap-4 md:gap-8 justify-center h-20">
+<ul class="flex items-center gap-4 md:gap-8 justify-center h-20 p-4">
   {
     linksNav.map((link) => (
       <li>
         {link.name === "Home" ? (
           <a href={link.url}>
-            <Image alt={`Go ${link.name}`} src={logo} width={50} height={50} />
+            <Image alt={`Go ${link.name}`} src={logo} width={200} height={100} />
           </a>
         ) : (
           <a href={link.url}>{link.name}</a>
