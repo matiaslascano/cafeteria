@@ -6,10 +6,12 @@ export default {
 			colors: {
 				'blanco': '#fff',
 				'negro': '#000',
-				'gris-claro': '#F5F5F5',
-				'gris-medio': '#808080',
+				'albescent': '#F6EBDA',
+				'sepia': '#a0583c',
 				'beige': '#F5F5DC',
-				'terracota': '#E2725B',
+				'roman': '#835E4C',
+				'brown': '#2F2105',
+				'hero': '#ffbd7f'
 			},
 
 		},

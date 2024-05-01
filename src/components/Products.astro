@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import hotCoffe from "../assets/hot-coffee.png";
+import coldCoffee from "../assets/cold-coffee.png";
+import tea from "../assets/tea.png";
+import dessert from "../assets/dessert.png";
+---
+
+<div class="p-4 bg-albescent">
+  <div class="flex justify-around">
+    <div class="flex flex-col items-center">
+      <Image src={hotCoffe} alt="hotCoffee" width={80} height={80} />
+      <p class="font-bold text-xl text-brown text-center">Café Caliente</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <Image src={coldCoffee} alt="coldCoffee" width={80} height={80} />
+      <p class="font-bold text-xl text-brown text-center">Café Frio</p>
+    </div>
+  </div>
+  <div class="flex justify-around mt-6">
+    <div class="flex flex-col items-center">
+      <Image src={tea} alt="tea" width={80} height={80} />
+      <p class="font-bold text-xl text-brown text-center">Te</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <Image src={dessert} alt="dessert" width={80} height={80} />
+      <p class="font-bold text-xl text-brown text-center">Panaderia</p>
+    </div>
+  </div>
+</div>

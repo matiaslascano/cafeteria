@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import star from "../assets/star-icon.png";
+---
+
+<main class="flex bg-albescent my-6 w-full justify-center items-center gap-6 py-6">
+  <div class="items-right"><Image src={star} alt="star" width={50} height={50} /></div>
+  <div class="w-2/3 text-left">
+    <p class="text-lg font-bold">Inscríbase en nuestro programa de recompensas por café!</p>
+    <p class="font-bold flex items-center gap-2">Más información <span class="text-xl font-bold">→</span></p>
+  </div>
+</main>

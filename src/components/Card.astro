@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import { cardData } from "../constants";
+---
+
+<h2 class="m-6 text-4xl font-extrabold">Café <span class=" border-b-4 border-red-500">Frio</span></h2>
+<div class="flex flex-col items-center">
+  {
+    cardData.map((card) => (
+      <div class="flex flex-col items-left mt-6 mx-6 bg-hero rounded-3xl p-6 w-4/5 shadow-xl shadow-black/50">
+        <img src={card.imageUrl} alt={card.name} width={80} height={80} class="w-full mb-2" />
+        <h2 class="mb-2 text-2xl text-brown/65 font-bold">{card.name}</h2>
+        <p class="text-sepia font-semibold mt-4">{card.description}</p>
+        <div class="flex justify-between items-center mt-4">
+            <p class="text-2xl font-bold text-brown/65">${card.price}</p>
+            <button class="flex bg-brown text-blanco py-2 rounded-full gap-4 w-2/3 items-center justify-center mt-2">Ordena</button>
+        </div>
+      </div>
+    ))
+  }
+</div>

@@ -1,8 +1,37 @@
 ---
 import { Image } from "astro:assets";
-import hero from "../assets/hero.jpg";
+import coffeeHero from "../assets/coffee-hero.png";
+import cart from "../assets/icons-cart.png";
 ---
 
-<div class="max-h-full">
-  <Image alt="hero" src={hero}/>
+<div class="flex w-full h-[50vh] top-0 -z-10">
+  <div class="w-1/2 md:w-4/5"></div>
+  <Image
+    src={coffeeHero}
+    alt="hero"
+    width={240}
+    height={240}
+    class="flex object-contain absolute left-1/4"
+  />
+  <div class="bg-hero
+    w-1/2
+    md:w-1/5
+   
+    md:h-full"></div>
+</div>
+<div class="p-4">
+  <h1 class="text-4xl font-bold text-center">
+    El <span class="text-hero">café</span> que te <span class="text-hero"
+      >enamorará</span
+    >
+  </h1>
+  <p class="text-center p-2 font-bold mt-4 text-xl">
+    Bebe, saborea y difunde el amor, donde cada taza es un abrazo con cafeína en
+    nuestro acogedor paraíso del café.
+  </p>
+  <button
+    class="flex bg-brown text-blanco py-4 rounded-full gap-4 w-full items-center justify-center mt-4"
+  >
+    <p class="font-bold text-2xl uppercase">Ordena</p>
+  </button>
 </div>
