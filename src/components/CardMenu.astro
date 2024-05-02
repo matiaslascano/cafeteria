@@ -1,16 +1,22 @@
 ---
-import { cardData } from "../constants";
+import { todosLosProductos } from "../data";
 ---
 
-<main class="grid grid-cols-2 gap-4 mx-6">
+<main class="grid grid-cols-2 gap-4 mx-6 md:grid-cols-7">
   {
-    cardData.map((card) => (
-      <div class="bg-roman rounded-3xl shadow-xl">
-        <img alt={card.name} src={card.imageUrl} class=" w-full content-contain rounded-3xl" />
-        <h3 class="text-white text-lg font-bold m-2">{card.name}</h3>
+    todosLosProductos.map((product) => (
+      <div class="bg-roman rounded-3xl shadow-xl md:max-h-50">
+        <img
+          alt={product.nombre}
+          src={product.imageUrl}
+          class=" w-full content-contain rounded-3xl md:max-w-[220px] md:object-contain md:w-full"
+        />
+        <h3 class="text-white text-lg font-bold m-2">{product.nombre}</h3>
         <div class="flex justify-between items-center mx-2 pb-2">
-            <p class="text-white font-bold">${card.price}</p>
-            <button class="bg-sepia rounded-xl p-2 mt-2 font-bold text-white px-4">Ordena</button>
+          <p class="text-white font-bold">${product.precio}</p>
+          <button class="bg-sepia rounded-xl p-2 mt-2 font-bold text-white px-4">
+            Ordena
+          </button>
         </div>
       </div>
     ))

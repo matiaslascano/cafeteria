@@ -3,21 +3,28 @@ import { Image } from "astro:assets";
 import about from "../assets/about.avif";
 ---
 
-<main class="w-full bg-albescent mt-6 p-4">
+<main class="w-full bg-albescent mt-6 p-4 md:flex">
   <Image
     src={about}
     alt="About Image"
     width={200}
-    class="mx-auto rounded-3xl border-4 border-white"
+    class="mx-auto rounded-3xl border-4 border-white md:mx-6 md:max-w-[200px]"
   />
-  <h2 class="text-3xl font-bold">
-    Acerca de <span class="border-b-4 border-red-500 my-2">Nosotros</span>
-  </h2>
-  <h3 class="text-2xl font-bold my-4">Saborea la perfección</h3>
-  <p class="text-sepia/50 font-bold mb-4">
-    Nuestro Mundo del Café, donde la pasión se une a la precisión en cada
-    infusión, ofreciéndole una sinfonía de sabores y un viaje a través de los
-    ricos y aromáticos reinos de la artesanía cafetera.
-  </p>
-  <button class="flex bg-brown text-hero font-bold py-2 rounded-full px-2 justify-center">Empieza a ordenar</button>
+  <div
+    class="md:text-center md:flex md:flex-col md:gap-8 md:max-w-[800px] md:justify-center md:mx-auto"
+  >
+    <h2 class="text-3xl font-bold">
+      Acerca de <span class="border-b-4 border-red-500 my-2">Nosotros</span>
+    </h2>
+    <h3 class="text-2xl font-bold my-4">Saborea la perfección</h3>
+    <p class="text-sepia/50 font-bold mb-4 md:text-3xl">
+      Nuestro Mundo del Café, donde la pasión se une a la precisión en cada
+      infusión, ofreciéndole una sinfonía de sabores y un viaje a través de los
+      ricos y aromáticos reinos de la artesanía cafetera.
+    </p>
+    <button
+      class="flex bg-brown text-hero font-bold py-2 rounded-full px-2 justify-center md:items-center md:w-full"
+      >Empieza a ordenar</button
+    >
+  </div>
 </main>
