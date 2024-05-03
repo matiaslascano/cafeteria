@@ -4,6 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://matiaslascano.github.io',
+  site: 'https://matiaslascano.github.io/',
   base: 'cafeteria',
 });
